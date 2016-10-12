@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	TCHAR patter[MAX_PATH];
 	TCHAR fileName[MAX_PATH];
 	memset(patter, 0x00, MAX_PATH);
-	_stprintf(patter, TEXT("%s\\*.txt"), directory);
+	_stprintf(patter, TEXT("%s\\*.dat"), directory);
 	hFind = FindFirstFile(patter, &FindFileData);
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
